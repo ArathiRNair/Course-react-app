@@ -11,7 +11,11 @@ const fetchData=()=>{
         (response)=>{
             changeData(response.data)
         }
-    ).catch()
+    ).catch(
+      (error)=>{
+        console.log(error)
+      }
+    )
 }
 
 useEffect(
